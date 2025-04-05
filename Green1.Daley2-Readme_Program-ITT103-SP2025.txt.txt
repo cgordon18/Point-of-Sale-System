@@ -1,0 +1,42 @@
+Authors: Jevone Green, Christina Daley
+Date Created: April 4th 2025
+Course: ITT103 
+GitHub Public URL to Code:https://github.com/JevonegreenUCC/Green.Dayley-ITT103-SP2025
+
+Program Documentation: Point of Sale (POS) System
+
+This program is a simple Point of Sale (POS) system for a supermarket, designed to allow cashiers to manage transactions efficiently. The system enables cashiers to:
+- View available products with their prices and stock quantities.
+- Add items to a shopping cart while validating stock availability.
+- Remove items from the cart and restock them in the inventory.
+- View the cart's contents along with total prices.
+- Process checkout by calculating the subtotal, applying discounts and sales tax, and handling payments.
+- Generate a formatted receipt for the customer.
+
+1. Ensure Python is installed on your system.
+2. Save the provided script as `pos_system.py`.
+3. Open a terminal or command prompt and navigate to the script's directory.
+4. Run the program by executing the command:
+   ```
+   python pos_system.py
+   ```
+5. Follow the on-screen menu to interact with the POS system.
+
+
+To customize or extend the functionality of this POS system, consider the following modifications:
+- **Product Catalog Updates:** Modify the `products` dictionary to include new products, adjust prices, or update stock levels.
+- **Discount Rules:** Change the discount criteria or percentage in the `checkout()` function.
+- **Tax Rate:** Modify the sales tax percentage in the `checkout()` function.
+- **Receipt Formatting:** Adjust the `generate_receipt()` function to change the appearance of the receipt.
+- **Database Integration:** Replace the in-memory product catalog with a database for persistent storage.
+- **GUI Interface:** Implement a graphical user interface (GUI) for a more user-friendly experience.
+
+
+- The program assumes that product names entered by the user match those in the catalog (case-insensitive handling is applied).
+- The cashier must enter valid numeric values for quantities and payments.
+- The inventory stock is updated only for the current session; restarting the program resets stock levels.
+- The system does not support barcode scanning or advanced inventory management features.
+- Payments must be entered manually; no direct integration with payment gateways is included.
+- The program is designed for single-user operation and does not include multi-user authentication or role-based access control.
+
+
